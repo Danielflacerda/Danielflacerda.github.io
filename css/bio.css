@@ -1,0 +1,121 @@
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: .5em solid #C2CCCA;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+    transition: 1s;
+    position: relative;
+    -webkit-animation: quica 1s infinite;
+    animation: quica 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes quica {
+    from {
+        top: 0em;
+    }
+
+    to {
+        top: 1em;
+    }
+}
+
+@keyframes quica {
+    from {
+        top: 0em;
+    }
+
+    to {
+        top: 1em;
+    }
+}
+
+.container > p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: rgb(11, 14, 99);
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
+}
+
+.citacao-bio:nth-of-type(odd) {
+    float: left;
+    margin-left: 0;
+}
+
+.citacao-bio:nth-of-type(even) {
+    float: right;
+    margin-right: 0;
+}
+
+.citacao-bio:nth-of-type(odd):hover,
+.citacao-bio:nth-of-type(odd):focus {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.citacao-bio:nth-of-type(even):hover,
+.citacao-bio:nth-of-type(even):focus {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/*.citacao-bio::before {
+    content: '"';
+    line-height: .8;
+    position: absolute;
+    font-size: 10em;
+    color: #c2ccca;
+}
+
+.citacao-bio > p {
+    position: relative;
+}*/
+
+th,td{
+    /*border: 3px solid black;*/
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+tbody th {
+    background-image: linear-gradient(to right, black, #0e1197);
+    color:white;
+}
+
+table{
+    border-collapse:separate;
+    border-spacing: 2px;
+}
+
+.habilidades [rowspan] {
+    vertical-align: middle;
+}
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+
+#start {
+    background-image: linear-gradient(to bottom right, black 55%, #0e1197);
+}
+
+thead {
+    background-image: linear-gradient(to bottom, black, #0e1197);
+    font-weight: bolder;
+    color: white;
+}
+
+td {
+    background-color: #0e1197;
+    color:white;
+    border: 1px solid black;
+}
