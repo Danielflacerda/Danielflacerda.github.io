@@ -1,0 +1,133 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+nav {
+    background-color: #8EE4AF !important;
+    margin-top: 1rem !important;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  background-image: linear-gradient(180deg, #379683, #05386B);
+}
+
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  margin-top: 2%;
+}
+
+.profile{
+  color: #05386B;
+}
+
+hr{
+  max-width: 90%;
+  background-color: #05386B;
+}
+
+.profile-content{
+  max-width: 0%;
+  text-align: left;
+  background-color: #5CDB95;
+  border-radius: 5px;
+  padding: 5px;
+  height: 0%;
+}
+
+.career{
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-name: grow;
+}
+
+.transform {
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
+}
+
+.transform-active{
+  max-width: 100%;
+  text-align: left;
+  background-color: #5CDB95;
+  border-radius: 5px;
+  padding: 5px;
+  height: 100%;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.profile-img{
+  border-radius: 300px;
+  float: left;
+  border: 5px solid #5CDB95;
+  text-align: center;
+  position: relative;
+  margin-bottom: 28px;
+}
+
+img{
+  max-width: 100%; height: auto;
+  box-sizing: border-box;
+  float: left;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  border-radius: 300px;
+  max-height: 100%;
+}
+
+.profile-description{
+ text-align: center;
+ background-color: #5CDB95;
+ border-radius: 5px;
+ margin-top: -90px;
+ padding-top: 60px;
+ float: left;
+ padding-bottom: 10px;
+}
+
+.footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+white-space: nowrap;
+line-height: 60px; /* Vertically center the text there */
+}
+
+/* Sticky footer styles 768
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+   
+  .full-width {
+      left: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      max-width: 100vw;
+      position: relative;
+      right: 50%;
+      width: 100vw;
+  }
+  
+  
